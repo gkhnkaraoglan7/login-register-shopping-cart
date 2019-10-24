@@ -1,0 +1,100 @@
+{{#each product}}
+<!-- Section: Features v.3 -->
+<section class="my-5">
+
+  <!-- Section heading -->
+  <h2 class="h1-responsive font-weight-bold text-center my-5">{{productName}}</h2>
+  <!-- Section description -->
+  <p class="lead grey-text text-center w-responsive mx-auto mb-5">{{productDescription}}</p>
+
+  <!-- Grid row -->
+  <div class="row">
+
+    <!-- Grid column -->
+    <div class="col-lg-5 text-center text-lg-left">
+      <img class="img-fluid" src="../../public/images/{{smallpicture}}" alt="" />
+    </div>
+    <!-- Grid column -->
+
+    <!-- Grid column -->
+    <div class="col-lg-7">
+
+      <!-- Grid row -->
+      <div class="row mb-3">
+
+        <!-- Grid column -->
+        <div class="col-1">
+          <i class="fas fa-share fa-lg indigo-text"></i>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-xl-10 col-md-11 col-10">
+          <h5 class="font-weight-bold mb-3">Unit Price</h5>
+          <p class="grey-text">{{unitPrice}}&#8378;</p>
+        </div>
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row -->
+
+      <!-- Grid row -->
+      <div class="row mb-3">
+
+        <!-- Grid column -->
+        <div class="col-1">
+          <i class="fas fa-share fa-lg indigo-text"></i>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-xl-10 col-md-11 col-10">
+          <h5 class="font-weight-bold mb-3">Quantity Per Unit</h5>
+          <p class="grey-text">{{quantityPerUnit}}</p>
+        </div>
+        <!-- Grid column -->
+  <!-- Grid column -->
+        <div class="col-xl-10 col-md-11 col-10">
+        <a class="btn btn-primary" href="/add-to-cart/{{_id}}">Add To Cart</a>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+
+    </div>
+    <!--Grid column-->
+
+  </div>
+  <!-- Grid row -->
+
+</section>
+<!-- Section: Features v.3 -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{{else}}
+<div class="alert alert-info">
+  There is No Registered Users
+</div>
+
+{{/each}}
+
+
+

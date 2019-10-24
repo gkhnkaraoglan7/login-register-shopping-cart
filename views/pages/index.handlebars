@@ -1,0 +1,25 @@
+{{> _errors}}
+<div class="row">
+    {{#each product}}
+    <div class="col-md-3">
+        <a href="/productDetails/{{_id}}">
+            <div class="card">
+                <div class="card-body">
+                    <ul class="list-group">
+
+                        <img class="productImages" src="./public/images/{{picture}}" alt="" />
+                        <li class="list-group-item">{{productName}}</li>
+                        <li class="list-group-item">{{unitPrice}}&#8378;</li>
+
+                    </ul>
+                </div>
+            </div>
+        </a>
+
+    </div>
+    {{else}}
+    <div class="alert alert-info">
+        There is Not Product
+    </div>
+    {{/each}}
+</div>

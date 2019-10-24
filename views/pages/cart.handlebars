@@ -1,0 +1,18 @@
+
+{{#if user}}
+{{#each product}}
+<li class="list-group-item">{{this.item.productName}}</li>
+<li class="list-group-item"> <img class="productImages" src="../../public/images/{{this.item.picture}}" alt="" /></li>
+<li class="list-group-item">{{this.unitPrice}}</li>
+<li class="list-group-item">{{this.quantity}}</li>
+<a href="/reducer/{{item._id}}">remove</a>
+<a href="/removeAll/{{item._id}}">removeAll</a>
+{{else}}
+<div class="alert alert-info">
+    There is No Registered Users
+</div>
+
+{{/each}}
+
+
+{{/if}}
